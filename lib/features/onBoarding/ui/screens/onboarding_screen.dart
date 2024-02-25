@@ -7,7 +7,7 @@ import '../../../../core/routing/routes.dart';
 import '../../../../core/theming/colors.dart';
 import '../../../../core/theming/styles_manager.dart';
 import '../../../../core/widgets/widgets.dart';
-import '../widgets/player_image.dart';
+import '../widgets/ankle_image.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class OnBoardingScreen extends StatelessWidget {
                         style: getRegularStyle(
                           color: Colors.black,
                           textHeight: 1.2.h,
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                         ),
                       ),
                       verticalSpace(5),
@@ -55,7 +55,7 @@ class OnBoardingScreen extends StatelessWidget {
                         style: getRegularStyle(
                           color: ColorManger.regularGrey.withOpacity(0.8),
                           textHeight: 1.2.h,
-                          fontSize: 16.sp,
+                          fontSize: 14.sp,
                         ),
                       ),
                       verticalSpace(40),
