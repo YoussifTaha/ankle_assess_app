@@ -1,43 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ankle_assess_app/core/theming/colors.dart';
 
-import '../../../../core/theming/styles_manager.dart';
-
-class PlayerImage extends StatelessWidget {
-  const PlayerImage({super.key});
+class AnkleImage extends StatelessWidget {
+  const AnkleImage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
-          width: 430.w,
-          height: 550.h,
-          foregroundDecoration: BoxDecoration(
+          width: 390.w,
+          height: 342.h,
+          decoration: BoxDecoration(
             gradient: LinearGradient(
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
-                stops: const [
-                  0.14,
-                  0.45
-                ],
-                colors: [
-                  ColorManger.primary,
-                  ColorManger.primary.withOpacity(0.0)
-                ]),
-          ),
-          child: Image.asset('assets/images/player.png'),
-        ),
-        Positioned(
-          bottom: 10,
-          width: 350.w,
-          child: Text(
-            'FootBall Injuries Application',
-            textAlign: TextAlign.center,
-            style: getBoldStyle(color: Colors.white, fontSize: 32.sp),
+              begin: Alignment(0.00, -1.00),
+              end: Alignment(0, 1),
+              colors: [Color(0xFF40916C), Color(0x9740916C), Color(0x0040916C)],
+            ),
           ),
         ),
+        Align(
+            alignment: Alignment.topCenter,
+            child: SizedBox(
+                height: 350.h, child: Image.asset('assets/images/ankle.png')))
       ],
     );
   }
